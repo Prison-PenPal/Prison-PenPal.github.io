@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Prison-PenPalace</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    p {
+
+      text-align: center;
+      
+    }
+    h1{
+
+      text-align: center;
+      padding-bottom: 50px;
+      color: white
+      
+;
+
+    }
+    label{
+
+      text-align: center;
+    }
+    button {
+    background-color: #31b3a4;    
+    border: none;
+    color: white; 
+    padding: 30px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+  }
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    .temp123
+    {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    div.justified {
+      display: flex;
+
+        justify-content: center;
+        width: 100%
+    }
+    
+    body {
+      background-color: #333333;
+      text-align: center;
+    }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  input[type=submit] {
+  background-color: #31b3a4;    
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+  </style>
+</head>
+<script>
+  function success() {
+    if(document.getElementById("Name").value==="") { 
+             document.getElementById('Name').disabled = true; 
+         } else { 
+             document.getElementById('Name').disabled = false;
+         }
+     }
+    </script>  
+
+<body>
+
+
+
+  <ul>
+    <li><a class="active" href="/home" style="font-family: Segoe UI">Prison-PenPalace</a></li>
+
+  </ul>
+  
+      <h1 style="font-family: 'Segoe UI';">Welcome!</h1>
+      <form method="POST">
+
+      <div class ="temp123">
+
+      <input onkeyup="success()" type="text" id="Name" placeholder="Enter Name" name="Name" style="display: inline;"><br><br>
+
+      <input type="text" id="City" placeholder="Enter City" name="City" style="display: inline;"><br><br>
+      
+      <input type="text" id="Zipcode" placeholder="Enter Zipcode" name="Zipcode" style="display: inline;"><br><br>
+      <input type="text" id="Email" placeholder="Enter Email" name="Email" style="display: inline;"><br><br>
+      <input type="text" id="Adress" placeholder="Enter Adress" name="Adress" style="display: inline; box-sizing: border-box;"><br><br>
+      <div class="justified">
+        <textarea rows = 4 cols="50" name = "Message" placeholder="Type your message here" style = "resize: none; padding-bottom: 10px;"></textarea><br><br>
+    </div> 
+    <input type = "submit" value="Submit your letter"  ><br><br>
+
+ 
+  </form>
+      </div>
+ 
+    <!--
+    <a class="button" type = "submit" id = "test" value = "Send"style = "background-color: #4CAF50; color: white; 
+    border none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block;font-size: 14px;
+  " href="/send">Send your letter</a>
+    -->
+</body>
+</html>
